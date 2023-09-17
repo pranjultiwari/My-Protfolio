@@ -214,9 +214,9 @@ section .title::after{
 }
 
 /* about section styling */
-.about .title::after{
-    content: "who i am";
-}
+/* .about .title::after{
+    /* content: "who i am"; */
+} */
 .about .about-content .left{
     width: 45%;
 }
@@ -269,7 +269,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i have made";
+    /* content: "what i have made"; */
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -318,11 +318,73 @@ section .title::after{
     
 }
 
+/* projects section starts here */
+
+.projects, .teams{
+    color:#fff;
+    background: #111;
+}
+.projects .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.projects .title::after,
+.teams .title::after{
+    background: #111;
+    /* content: "what i have made"; */
+}
+.projects .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover{
+    background: crimson;
+}
+.projects .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects .serv-content .card:hover i{
+    color: #fff;
+}
+.projects .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .serv-content .card .hello{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: rgb(255, 255, 255);
+
+}
+.projects .serv-content .card .internal{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: white
+    
+}
+
 /* skills section styling */
 
-.skills .title::after{
+/* .skills .title::after{
     content: "what i know";
-}
+} */
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -458,9 +520,9 @@ section .title::after{
 }
 
 /* contact section styling */
-.contact .title::after{
+/* .contact .title::after{
     content: "get in touch";
-}
+} */
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
